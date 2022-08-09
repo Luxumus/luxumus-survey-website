@@ -10,6 +10,12 @@ body {
   color: white;
 }
 
+p {
+  width: 0 auto;
+  margin: 16px;
+  font-size: 26px;
+  text-align: center;
+}
 #title,
 #description {
   width: 0 auto;
