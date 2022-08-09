@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This is a survey form to get a certificate in freeCodeCamp</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <label id="email-label">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" placeholder="Enter your email" required>
+      <label id="number-label">Age <span>(Optional)</span></label>
+      <input type="number" id="number"  placeholder="Age" min="10" max="99">
+    </fieldset>
+    <fieldset>
+      <label>What are your talents?</label>
+      <select id="dropdown">
+        <option value="">Select current role</option>
+        <option value="1">Dancing</option>
+        <option value="2">Singing</option>
+        <option value="3">Painting</option>
+        <option value="4">Other</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label>Would you recommend this form to a friend?</label>
+      <div>
+        <input class="recommend-label" type="radio" name="recommend" value="1">Definitely</input>
+      </div>
+      <div>
+        <input class="recommend-label" type="radio" name="recommend" value="2">Maybe</input>
+      </div>
+      <div>
+        <input class="recommend-label" type="radio" name="recommend" value="3">Don't suggest</input>
+      </div>
+    </fieldset>
+    <fieldset>
+      <label>What food do you like?</label>
+      <div>
+        <input class="food-label" type="checkbox" name="food" value="vegetable">Vegetable</input>
+      </div>
+      <div>
+        <input class="food-label" type="checkbox" name="food" value="fruits">Fruits</input>
+      </div>
+      <div>
+        <input class="food-label" type="checkbox" name="food" value="meat-and-poultry">Meat and Poultry</input>
+      </div>
+      <div>
+        <input class="food-label" type="checkbox" name="food" value="dairy-food">Dairy Foods</input>
+      </div>
+    </fieldset>
+    <fieldset>
+      <label>Do you have any suggestions for this survey form?</label>
+      <textarea name="suggestions" id="suggestions" cols="30" rows="10"></textarea>
+    </fieldset>
+    <input type="submit" value="Submit" id="submit">
+  </form>
+
+
+</body>
+</html>
